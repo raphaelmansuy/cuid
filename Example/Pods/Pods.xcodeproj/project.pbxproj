@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		2D152915399A1BC82D9CF8122A187A22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		40299C1C93DE4FECCDF3F131BA76185B /* Pods-cuid_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E87A5F0C0B8C9B2EA661B9E930C3B62 /* Pods-cuid_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6641DCE920A8920F001F4464 /* Fingerprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641DCE820A8920F001F4464 /* Fingerprint.swift */; };
-		6641DCEB20A8922D001F4464 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641DCEA20A8922D001F4464 /* StringExt.swift */; };
+		6641DCED20A8995B001F4464 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641DCEC20A8995B001F4464 /* StringExt.swift */; };
+		6641DCEF20A8996C001F4464 /* Fingerprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641DCEE20A8996C001F4464 /* Fingerprint.swift */; };
 		66AD5D31EBC478C54C80C5F628325EE3 /* cuid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D751FF92085D92F4219FC4974E1CD35 /* cuid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AB2B9085972EF80D3745A1C3BD66E79 /* Pods-cuid_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD4A4EE18E375D30E129DCE7EB3669 /* Pods-cuid_Tests-dummy.m */; };
 		8434B8FC6D456A1AF22CE26A8BCE92E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -37,8 +37,8 @@
 		4B11BD44ED0265F47966A6DF50338EB5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5DCD4A4EE18E375D30E129DCE7EB3669 /* Pods-cuid_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-cuid_Tests-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6641DCE820A8920F001F4464 /* Fingerprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fingerprint.swift; sourceTree = "<group>"; };
-		6641DCEA20A8922D001F4464 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		6641DCEC20A8995B001F4464 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExt.swift; path = cuid/Classes/StringExt.swift; sourceTree = "<group>"; };
+		6641DCEE20A8996C001F4464 /* Fingerprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fingerprint.swift; path = cuid/Classes/Fingerprint.swift; sourceTree = "<group>"; };
 		6A23B840E3AEDF4DB03C473841F45E2E /* Pods_cuid_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cuid_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2294B18303D0F7A6F8688B094ADFB4 /* Pods-cuid_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cuid_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7A77D95F7F0B0CE00976696E61E3E564 /* cuid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = cuid.modulemap; sourceTree = "<group>"; };
@@ -140,8 +140,8 @@
 		87B2B45836C45669D7E1E29F05971F64 /* cuid */ = {
 			isa = PBXGroup;
 			children = (
-				6641DCEA20A8922D001F4464 /* StringExt.swift */,
-				6641DCE820A8920F001F4464 /* Fingerprint.swift */,
+				6641DCEE20A8996C001F4464 /* Fingerprint.swift */,
+				6641DCEC20A8995B001F4464 /* StringExt.swift */,
 				0C3C324694B9A3D29707697D3172E09A /* Cuid.swift */,
 				9CE51BA2870709CDB68358DDCC276F0F /* Pod */,
 				2F400BE4DC95459ADDC75A6951F2B5C4 /* Support Files */,
@@ -273,10 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6641DCE920A8920F001F4464 /* Fingerprint.swift in Sources */,
+				6641DCEF20A8996C001F4464 /* Fingerprint.swift in Sources */,
 				95598010F21F8BABDB94B470EA6FB981 /* cuid-dummy.m in Sources */,
-				6641DCEB20A8922D001F4464 /* StringExt.swift in Sources */,
 				BA840FD785ADC87CEE5FCA183BB98B2B /* Cuid.swift in Sources */,
+				6641DCED20A8995B001F4464 /* StringExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

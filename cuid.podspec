@@ -18,7 +18,12 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  
+  Collision-resistant ids optimized for horizontal scaling and binary search lookup performance.
+  
+  Currently available for Node, browsers, Ruby, .Net, Go, PHP and Elixir. This is the swift version
+  
+  Cuid().gencuid() returns a short random string with some collision-busting measures. Safe to use as HTML element ID's, and unique server-side record lookups.
                        DESC
 
   s.homepage         = 'https://github.com/raphaelmansuy/cuid'
@@ -28,9 +33,10 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/raphaelmansuy/cuid.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '4.1'
 
-  s.source_files = 'cuid/Classes/**/*'
+  s.source_files = 'cuid/**/*'
   
   # s.resource_bundles = {
   #   'cuid' => ['cuid/Assets/*.png']
