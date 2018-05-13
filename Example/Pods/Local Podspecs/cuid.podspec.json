@@ -1,0 +1,22 @@
+{
+  "name": "cuid",
+  "version": "0.1.0",
+  "summary": "A short description of cuid.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/raphaelmansuy/cuid",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "raphaelmansuy": "raphael.mansuy@caliatys.com"
+  },
+  "source": {
+    "git": "https://github.com/raphaelmansuy/cuid.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "cuid/Classes/**/*"
+}

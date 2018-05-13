@@ -1,0 +1,6 @@
+framework module Pods_cuid_Tests {
+  umbrella header "Pods-cuid_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

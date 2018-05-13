@@ -1,0 +1,16 @@
+PODS:
+  - cuid (0.1.0)
+
+DEPENDENCIES:
+  - cuid (from `../`)
+
+EXTERNAL SOURCES:
+  cuid:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  cuid: 82827f3940c4f8294a62dc75d7e367f70b858686
+
+PODFILE CHECKSUM: 75f143ba7dae374438f435e5c942b4937ac97458
+
+COCOAPODS: 1.5.0

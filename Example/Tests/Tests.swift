@@ -2,6 +2,7 @@ import XCTest
 import cuid
 
 class Tests: XCTestCase {
+    let genId = Cuid()
     
     override func setUp() {
         super.setUp()
@@ -13,15 +14,19 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func verifyGenIdMin() {
+        // Test if the id generated has 25 character
+        let id = genId.gencuid()
+        XCTAssert(id.count == 25,"Pass")
     }
     
-    func testPerformanceExample() {
+    func testPerformance1000gen() {
         // This is an example of a performance test case.
         self.measure() {
-            // Put the code you want to measure the time of here.
+            for _ in 1...1000 {
+                let id = genId.gencuid()
+               // print(id)
+            }
         }
     }
     

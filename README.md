@@ -5,11 +5,24 @@
 [![License](https://img.shields.io/cocoapods/l/cuid.svg?style=flat)](https://cocoapods.org/pods/cuid)
 [![Platform](https://img.shields.io/cocoapods/p/cuid.svg?style=flat)](https://cocoapods.org/pods/cuid)
 
+
+Collision-resistant ids optimized for horizontal scaling and binary search lookup performance.
+
+This is port in Swift 4.1 language of the javascript project [https://github.com/ericelliott/cuid](https://github.com/ericelliott/cuid)
+
+ returns a short random string with some collision-busting measures. Safe to use as HTML element ID's, and unique server-side record lookups.
+
+`let genId = Cuid()`
+
+`let id = genId.gencuid()`
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+None
 
 ## Installation
 
@@ -22,7 +35,7 @@ pod 'cuid'
 
 ## Author
 
-raphaelmansuy, raphael.mansuy@caliatys.com
+Raphael MANSUY, raphael.mansuy@gmail.com
 
 ## License
 

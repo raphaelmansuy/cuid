@@ -1,0 +1,6 @@
+framework module cuid {
+  umbrella header "cuid-umbrella.h"
+
+  export *
+  module * { export * }
+}
