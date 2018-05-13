@@ -1,0 +1,6 @@
+use_frameworks!
+target 'cuid_Tests' do
+  pod 'cuid', :path => '../'
+  
+  
+end
