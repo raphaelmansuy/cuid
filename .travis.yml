@@ -7,4 +7,4 @@ language: objective-c
 xcode_sdk: iphonesimulator10.1
 script:
 - set -o pipefail
-- travis_retry xcodebuild -workspace Example/cuid.xcworkspace -scheme "cuid-Example" -destination "platform=iOS Simulator,name=iPhone 10" build-for-testing test | xcpretty
+- travis_retry xcodebuild -workspace Example/cuid.xcworkspace -scheme "cuid-Example" -destination "platform=iOS Simulator,name=iPhone 8" build-for-testing test | xcpretty
