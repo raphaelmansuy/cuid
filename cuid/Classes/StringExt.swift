@@ -9,13 +9,13 @@
 
 import Foundation
 
-internal extension StringProtocol {
+extension StringProtocol {
     var ascii: [UInt32] {
         return unicodeScalars.filter{$0.isASCII}.map{$0.value}
     }
 }
 
-internal extension Character {
+extension Character {
     var ascii: UInt32? {
         return String(self).unicodeScalars.filter{$0.isASCII}.first?.value
     }
