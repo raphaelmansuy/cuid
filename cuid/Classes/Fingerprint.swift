@@ -6,14 +6,11 @@
 //  MIT License
 //
 
-import Foundation
-
-
-internal struct Fingerprint {
+struct Fingerprint {
     
     private static let convertBase = 36
     
-    internal static func generate() -> String {
+    static func generate() -> String {
         let padding = 2
         let pid = String(getpid(),radix: convertBase).padding(toLength: padding, withPad: "0", startingAt: 0)
         let idDevice = UIDevice.current.identifierForVendor?.uuidString ?? ""

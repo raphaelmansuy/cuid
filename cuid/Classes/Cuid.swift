@@ -7,8 +7,6 @@
 //  MIT License
 //
 
-import Foundation
-
 public struct Cuid {
     
     private static var c = 0
