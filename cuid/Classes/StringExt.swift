@@ -14,6 +14,7 @@ internal extension StringProtocol {
         return unicodeScalars.filter{$0.isASCII}.map{$0.value}
     }
 }
+
 internal extension Character {
     var ascii: UInt32? {
         return String(self).unicodeScalars.filter{$0.isASCII}.first?.value
