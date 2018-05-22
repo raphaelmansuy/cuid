@@ -23,8 +23,7 @@ class Tests: XCTestCase {
         // This is an example of a performance test case.
         self.measure() {
             for _ in 1...1000 {
-                let id = Cuid.generateId()
-               // print(id)
+                Cuid.generateId()
             }
         }
     }

@@ -30,6 +30,7 @@ public struct Cuid {
         return c - 1
     }
     
+    @discardableResult
     public static func generateId() -> String {
         // Starting with a lowercase letter makes
         // it HTML element ID friendly.
