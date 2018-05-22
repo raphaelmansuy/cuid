@@ -9,7 +9,7 @@
 import Foundation
 
 
-internal class Fingerprint {
+internal struct Fingerprint {
     
     private static let convertBase = 36
     
@@ -21,7 +21,7 @@ internal class Fingerprint {
         let idDeviceCode = idDevice.ascii.reduce(UInt32(idDeviceLength+convertBase)
             , { $0 + $1 })
         let hostId = String(idDeviceCode,radix:convertBase).padding(toLength: padding, withPad: "0", startingAt: 0)
-        let fingerprint = pid + hostId;
+        let fingerprint = pid + hostId
         return fingerprint
     }
 }
