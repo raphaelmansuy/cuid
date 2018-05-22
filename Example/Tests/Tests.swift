@@ -13,10 +13,10 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func verifyGenIdMin() {
+    func testIdGeneration() {
         // Test if the id generated has 25 character
         let id = Cuid.generateId()
-        XCTAssert(id.count == 25,"Pass")
+        XCTAssert(id.count == 25, "ID count should be 25")
     }
     
     func testPerformance1000gen() {
