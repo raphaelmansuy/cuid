@@ -12,9 +12,7 @@ This is port in Swift 4.1 language of the javascript project [https://github.com
 
  returns a short random string with some collision-busting measures. Safe to use as HTML element ID's, and unique server-side record lookups.
 
-`let genId = Cuid()`
-
-`let id = genId.gencuid()`
+`let id = Cuid.gencuid()`
 
 ## Example
 
