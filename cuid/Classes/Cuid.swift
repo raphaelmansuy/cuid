@@ -7,34 +7,29 @@
 //  MIT License
 //
 
-import Foundation
-
-public class Cuid {
+public struct Cuid {
     
-    private var c  = 0
-    private let blocksize = 4
-    private let convertBase = 36
-    private let discreteValues : Decimal
+    private static var c = 0
+    private static let blocksize = 4
+    private static let convertBase = 36
+    private static let discreteValues: Decimal = pow(Decimal(convertBase),blocksize)
     
-    public init() {
-        discreteValues = pow(Decimal(convertBase),blocksize)
-    }
-    
-    func randomBloc() -> String {
+    static func randomBloc() -> String {
         let d = NSDecimalNumber(decimal: discreteValues)
         let r = arc4random_uniform(UInt32(truncating: d)) << 0
         let radix = String(r,radix: convertBase)
         return radix.padding(toLength: blocksize, withPad: "0", startingAt: 0)
     }
     
-    func safeCounter() -> Int {
+    static func safeCounter() -> Int {
         let dvals = Int(truncating: NSDecimalNumber(decimal: discreteValues))
         c = c < dvals ? c : 0
         c = c + 1; // this is not subliminal
-        return c - 1;
+        return c - 1
     }
     
-    @objc public func gencuid() -> String {
+    @discardableResult
+    public static func generateId() -> String {
         // Starting with a lowercase letter makes
         // it HTML element ID friendly.
         let letter = "c" // hard-coded allows for sequential access
@@ -46,7 +41,5 @@ public class Cuid {
         let random = randomBloc() + randomBloc()
         let cuid = letter + timestamp + counter + print + random
         return cuid
-        
     }
 }
-

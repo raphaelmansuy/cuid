@@ -2,8 +2,7 @@ import XCTest
 import cuid
 
 class Tests: XCTestCase {
-    let genId = Cuid()
-    
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -14,20 +13,18 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func verifyGenIdMin() {
+    func testIdGeneration() {
         // Test if the id generated has 25 character
-        let id = genId.gencuid()
-        XCTAssert(id.count == 25,"Pass")
+        let id = Cuid.generateId()
+        XCTAssert(id.count == 25, "ID count should be 25")
     }
     
     func testPerformance1000gen() {
         // This is an example of a performance test case.
         self.measure() {
             for _ in 1...1000 {
-                let id = genId.gencuid()
-               // print(id)
+                Cuid.generateId()
             }
         }
     }
-    
 }
