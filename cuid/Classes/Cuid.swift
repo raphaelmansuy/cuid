@@ -7,7 +7,7 @@
 //  MIT License
 //
 
-public class Cuid {
+@objc public class Cuid: NSObject {
     
     private static var c = 0
     private static let blocksize = 4
