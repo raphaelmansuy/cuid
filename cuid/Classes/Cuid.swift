@@ -7,7 +7,7 @@
 //  MIT License
 //
 
-public struct Cuid {
+public class Cuid {
     
     private static var c = 0
     private static let blocksize = 4
@@ -29,7 +29,7 @@ public struct Cuid {
     }
     
     @discardableResult
-    public static func generateId() -> String {
+    @objc public static func generateId() -> String {
         // Starting with a lowercase letter makes
         // it HTML element ID friendly.
         let letter = "c" // hard-coded allows for sequential access
