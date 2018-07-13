@@ -1,5 +1,6 @@
 use_frameworks!
 target 'cuid_Tests' do
+  platform :osx, '10.10'
   pod 'cuid', :path => '../'
   
   
