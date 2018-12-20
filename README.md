@@ -8,7 +8,7 @@
 
 Collision-resistant ids optimized for horizontal scaling and binary search lookup performance.
 
-This is port in Swift 4.1 language of the javascript project [https://github.com/ericelliott/cuid](https://github.com/ericelliott/cuid)
+This is port in Swift 4.2 language of the javascript project [https://github.com/ericelliott/cuid](https://github.com/ericelliott/cuid)
 
  returns a short random string with some collision-busting measures. Safe to use as HTML element ID's, and unique server-side record lookups.
 
