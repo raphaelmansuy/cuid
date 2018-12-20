@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'cuid'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Collision-resistant ids optimized for horizontal scaling and binary search lookup performance. Based on ericelliott work for Javascript'
 
 # This description is used to generate tags and improve search results.
