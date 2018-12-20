@@ -34,7 +34,7 @@ public struct Cuid {
         // it HTML element ID friendly.
         let letter = "c" // hard-coded allows for sequential access
         // timestamp
-        let timestamp =  String(Int(NSDate().timeIntervalSince1970 * 1000),radix:convertBase)
+        let timestamp =  String(Int64(Date().timeIntervalSince1970 * 1000),radix:convertBase)
         // Prevent same-machine collisions
         let counter = String(safeCounter(),radix:convertBase).padding(toLength: blocksize, withPad: "0", startingAt: 0)
         let print = Fingerprint.generate()
