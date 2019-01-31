@@ -7,6 +7,8 @@
 //  MIT License
 //
 
+import Foundation
+
 @objc public class Cuid: NSObject {
     
     private static var c = 0
