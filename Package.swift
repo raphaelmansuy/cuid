@@ -12,7 +12,7 @@ let package = Package(
       targets: ["cuid"]
     ),
   ],
-  targets: [o
+  targets: [
     .target(
       name: "cuid",
       path: "cuid"
