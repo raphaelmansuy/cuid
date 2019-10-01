@@ -6,6 +6,9 @@
 //  MIT License
 //
 
+import Foundation
+import UIKit
+
 struct Fingerprint {
     
     private static let convertBase = 36
