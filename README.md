@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/cuid.svg?style=flat)](https://cocoapods.org/pods/cuid)
 [![License](https://img.shields.io/cocoapods/l/cuid.svg?style=flat)](https://cocoapods.org/pods/cuid)
 [![Platform](https://img.shields.io/cocoapods/p/cuid.svg?style=flat)](https://cocoapods.org/pods/cuid)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fraphaelmansuy%2Fcuid.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fraphaelmansuy%2Fcuid?ref=badge_shield)
 
 
 Collision-resistant ids optimized for horizontal scaling and binary search lookup performance.
@@ -38,3 +39,6 @@ Raphael MANSUY, raphael.mansuy@gmail.com
 ## License
 
 cuid is available under the MIT license. See the LICENSE file for more info.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fraphaelmansuy%2Fcuid.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fraphaelmansuy%2Fcuid?ref=badge_large)
